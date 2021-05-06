@@ -67,7 +67,7 @@ body {
       .nav-link li a:hover {
         border-bottom: 2px solid var(--primary-text-color);
         color: var(--primary-text-color); }
-  @media (max-width: 480px) {
+  @media (max-width: 580px) {
     .nav-link li {
       display: block;
       margin-left: 10px; } }
