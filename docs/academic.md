@@ -4,17 +4,21 @@ title: Academic stuff
 permalink: /academic/
 ---
 
-# Hello!
+## Hello!
 
-I'm a third year Ph.D. candidate in Linguistics at Stanford, advised by [Dan Jurafsky](http://stanford.edu/~jurafsky/). I am also a member of the [Natural Language Processing Group](https://nlp.stanford.edu/).
+I'm a third year Ph.D. candidate in Linguistics at Stanford, advised by [Dan Jurafsky](http://stanford.edu/~jurafsky/). I am also a member of the [Stanford Natural Language Processing Group](https://nlp.stanford.edu/).
 
 My primary research interests are in computational social science, historical linguistics, and cognitive science.
 
 You can check out my publications [here]() and read more about my research projects [here]().
 
-Feel free to reach out and connect!
+Feel free to reach out!
 
-# Contact
+### Connect
+
+yiweil [at] stanford [dot] edu
+https://github.com/yiweiluo
+
 
 > This is a blockquote following a header.
 >
