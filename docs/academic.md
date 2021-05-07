@@ -10,7 +10,7 @@ I'm a third year Ph.D. candidate in Linguistics at Stanford, advised by [Dan Jur
 
 My primary research interests are in computational social science, semantic change and variation, and cognitive science.
 
-You can check out my publications [here]() and read more about my research projects [here]().
+You can check out my publications [here](https://yiweiluo.github.io/academic/pubs.html) and read more about my research projects [here](https://yiweiluo.github.io/academic/research.html).
 
 Feel free to reach out!
 
