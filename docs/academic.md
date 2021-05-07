@@ -21,7 +21,7 @@ yiweil [at] stanford [dot] edu
 [https://github.com/yiweiluo](https://github.com/yiweiluo)
 
 
-> This is a blockquote following a header.
+<!-- > This is a blockquote following a header.
 >
 > When something is important enough, you do it even if the odds are not in your favor.
 
@@ -127,4 +127,4 @@ Long, single-line code blocks should not wrap. They should horizontally scroll i
 The final element.
 ```
 
-## Emojis
+## Emojis -->
