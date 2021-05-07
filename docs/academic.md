@@ -4,19 +4,17 @@ title: Academic stuff
 permalink: /academic/
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+# Hello!
 
-[Link to another page](./another-page.html).
+I'm a third year Ph.D. candidate in Linguistics at Stanford, advised by [Dan Jurafsky](http://stanford.edu/~jurafsky/). I am also a member of the [Natural Language Processing Group](https://nlp.stanford.edu/).
 
-There should be whitespace between paragraphs.
+My primary research interests are in computational social science, historical linguistics, and cognitive science.
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+You can check out my publications [here]() and read more about my research projects [here]().
 
-# Header 1
+Feel free to reach out and connect!
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
-
-## Header 2
+# Contact
 
 > This is a blockquote following a header.
 >
