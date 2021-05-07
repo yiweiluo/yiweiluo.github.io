@@ -12,6 +12,7 @@
 html {
   --primary-background-color: white;
   --primary-text-color: #222;
+  --anchor-text-color: #b30000;
   --primary-highlight-color: #eeeeee;
   padding: 0;
   margin: 0;
@@ -75,7 +76,7 @@ body {
     text-align: left;
     a {
       text-decoration: none;
-      color: var(--primary-text-color);
+      color: var(--anchor-text-color);
       &:hover {
         border-bottom: 2px solid var(--primary-text-color);
         color: var(--primary-text-color);
@@ -130,7 +131,7 @@ body {
         list-style-type: none;
         a {
           text-decoration: none;
-          color: var(--primary-text-color);
+          color: var(--anchor-text-color);
           &:hover {
             border-bottom: 2px solid var(--primary-text-color);
             color: var(--primary-text-color);
@@ -162,7 +163,7 @@ body {
       max-width: 100%;
     }
     a {
-      color: var(--primary-text-color);
+      color: var(--anchor-text-color);
     }
   }
 }
