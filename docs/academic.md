@@ -17,7 +17,8 @@ Feel free to reach out!
 ### Connect
 
 yiweil [at] stanford [dot] edu
-https://github.com/yiweiluo
+
+[https://github.com/yiweiluo](https://github.com/yiweiluo)
 
 
 > This is a blockquote following a header.
