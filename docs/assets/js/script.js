@@ -28,3 +28,12 @@ function changeTheme(element, theme) {
 function capitalizeFirstLetter(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
 }
+
+function dispEl(elID) {
+  var x = document.getElementById(elID);
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
