@@ -1,0 +1,607 @@
+/* Applies to the entire body of the HTML document (except where overridden by more specific
+selectors). */
+body {
+  margin: 25px;
+  background-color: rgb(240,240,240);
+  font-family: arial, sans-serif;
+  font-size: 14px;
+}
+
+table th {
+  border-right: none;
+  color: black
+}
+
+table th:last-of-type {
+  border: none;
+}
+
+
+div.column {
+  float: left;
+  width: 50%;
+}
+
+div.content_column {
+  border-color: red;
+  border-width: 5px;
+  padding-right: 10px;
+  color: black;
+  float: right;
+  width: 90%;
+  margin-top: 155px;
+  margin-right: 20px;
+  border-spacing: 20px 40px;
+}
+
+div.digest_column {
+  border-color: transparent;
+  border-width: 5px;
+  padding-right: 10px;
+  color: black;
+  float: right;
+  width: 90%;
+  margin-top: 155px;
+  margin-right: 20px;
+  border-spacing: 20px 40px;
+}
+
+
+div.content_column_food {
+  font-family: Verdana, sans-serif;
+  letter-spacing: 1.6px;
+  border-color: white;
+  border-style: solid;
+  border-width: 5px;
+  padding-right: 30px;
+  background-color: #ccffcc;
+  float: right;
+  width: 70%;
+  margin-top: 185px;
+  margin-right: 100px;
+  border-spacing: 20px 40px;
+  padding-top: 13px;
+}
+
+figcaption {
+  background-color: red;
+  color: white;
+  font-style: italic;
+  padding: 4px;
+  text-align: right;
+  margin-right: 5px;
+}
+
+div.media_heading {
+  color: red;
+  font-style: bold;
+  padding: 4px;
+  text-align: center;
+  margin-right: 5px;
+  text-transform: uppercase;
+  font-size: 2em;
+}
+
+div.egg_heading {
+  color: black;
+  font-style: bold;
+  padding: 3px;
+  text-align: center;
+  margin-right: 5px;
+  font-size: 1.5em;
+}
+
+div.threads_heading {
+  color: black;
+  font-style: bold;
+  padding: 3px;
+  text-align: center;
+  margin-right: 5px;
+  font-size: 1.5em;
+}
+
+div.reflections_heading {
+  color: black;
+  font-style: bold;
+  padding: 3px;
+  text-align: center;
+  margin-right: 5px;
+  font-size: 1.5em;
+}
+
+div.snippets_heading {
+  color: black;
+  font-style: bold;
+  padding: 3px;
+  text-align: center;
+  margin-right: 5px;
+  font-size: 1.5em;
+}
+
+div.recs_heading {
+  color: white;
+  font-style: bold;
+  padding: 3px;
+  text-align: center;
+  margin-right: 5px;
+  font-size: 1.5em;
+  vertical-align: center;
+}
+
+div.food_comment {
+  padding-bottom: 10px;
+  padding-left: 30px;
+}
+
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+div.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+div.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+div.flip-box:hover .flip-box-inner {
+  transform: rotateX(180deg);
+}
+
+/* Position the front and back side */
+div.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side */
+div.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+div.flip-box-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateX(180deg);
+}
+
+div.left_container {
+  position: fixed;
+  width: 40%;
+  font-size: 0.9em;
+}
+
+div.right_container {
+  float:right;
+  width: 60%;
+}
+
+figure {
+  border: 2.5px #cccccc solid;
+  padding: 4px;
+  margin: auto;
+  font-size: 0.875em;
+}
+
+/* Clear floats after the columns */
+div.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+ul.content_menu {
+  list-style-type: none;
+  padding-left: 3px;
+}
+
+ul.food_list {
+  list-style-type: none;
+  padding-left: 13px;
+  font-family: Verdana, sans-serif;
+  letter-spacing: 1.6px;
+}
+
+ul.food_list li::before {
+  content: "\2022   ";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: red; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1px; /* Also needed for space (tweak if needed) */
+  padding-left: 2px;
+}
+
+tab {
+        tab-size: 2;
+    }
+
+li.content_menu:before {
+  content: '\2750'; margin-left: -10px; margin-right: 5px;
+}
+
+li.egg_menu:before {
+  content: '\01F95A'; margin-left: -10px; margin-right: 5px;
+}
+
+li.snippets_menu:before {
+  content: '\02702'; margin-left: -10px; margin-right: 5px;
+}
+
+ul.sub_content_menu {
+  list-style-type: none;
+  margin-left: 2px;
+  padding-left: 13px;
+  font-size: 80%;
+}
+
+button.main_menu {
+  background-color: none; /* Green */
+  border: none;
+  color: white;
+  padding: 1px 1px;
+  margin-right: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 19px;
+  border-bottom: 0px solid transparent;
+}
+
+button.digest_menu {
+  background-color: none; /* Green */
+  border: none;
+  color: red;
+  padding: 1px 1px;
+  margin-right: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 19px;
+  border-bottom: 1px solid transparent;
+}
+
+button.digest_menu:focus {
+    outline: none;
+}
+
+button.digest_menu:hover {
+  border-bottom:solid 0.5px black;
+}
+
+button.digest_menu:active {
+  border-bottom:solid 0.5px black;
+}
+
+button.month_menu {
+  background-color: black; /* Green */
+  border: none;
+  color: white;
+  padding: 6px 7px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.9em;
+  border-bottom: 1px solid transparent;
+}
+
+button.month_menu:focus {
+    outline: none;
+}
+
+button.month_menu:hover {
+  font-style: italic;
+}
+
+button.month_menu:active {
+  font-style: italic;
+}
+
+button.week_menu {
+  background-color: none; /* Green */
+  border: none;
+  color: black;
+  padding: 1px 1px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.85em;
+  border-bottom: 1px solid transparent;
+}
+
+button.week_menu:focus {
+    outline: none;
+}
+
+button.week_menu:hover {
+  color: red;
+}
+
+button.week_menu:active {
+  color: red;
+}
+
+button.day_menu {
+  background-color: white; /* Green */
+  border: none;
+  color: red;
+  padding: 4px 4px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.65em;
+  border-bottom: 1px solid transparent;
+}
+
+button.day_menu:focus {
+    outline: none;
+}
+
+button.day_menu:hover {
+  background-color: red;
+  color: white;
+}
+
+button.day_menu:active {
+  background-color: red;
+  color: white;
+}
+
+/* Applies to all <h1>...</h1> elements. */
+h1 {
+  font-size: 35px;
+  font-weight: normal;
+  margin-top: 5px;
+}
+
+div.month{
+  display: none;
+}
+
+div.month_container{
+  margin-left: 50px;
+}
+
+div.week_container{
+  margin-left:100px;
+}
+
+div.day_container{
+  margin-left:565px;
+  width: 100%;
+  height: 100%;
+
+  overflow-y: visible;
+  white-space:nowrap;
+  overflow-y: auto;
+}
+
+div.monday_container{
+  margin-left:57px;
+}
+
+div.tuesday_container{
+  margin-left:93px;
+}
+
+div.content_container{
+  margin-left:5px;
+  margin-right:5px;
+  padding: 15px 25px;
+  background-color: white;
+  font-size: 90%;
+  list-style-type: square;
+}
+
+div.egg_container{
+  width: 40%;
+  margin-left:5px;
+  margin-right:5px;
+  padding: 15px 25px;
+  background-color: burlywood;
+  font-size: 90%;
+  list-style-type: square;
+}
+
+div.reflections_container{
+  margin-left:5px;
+  margin-right:5px;
+  padding: 15px 25px;
+  background-color: silver;
+  font-size: 90%;
+  list-style-type: square;
+}
+
+div.threads_container{
+  margin-left:5px;
+  margin-right:5px;
+  padding: 15px 25px;
+  background-color: white;
+  font-size: 90%;
+  list-style-type: square;
+}
+
+div.snippets_container{
+  margin-left:5px;
+  margin-right:5px;
+  padding: 15px 25px;
+  background-color: ivory;
+  font-size: 90%;
+  list-style-type: square;
+}
+
+div.recs_container{
+  margin-left:0px;
+  margin-right:0px;
+  padding: 0px 0px;
+  background-color: transparent;
+  font-color: white;
+  font-size: 100%;
+  list-style-type: square;
+}
+
+div.cookbook_column {
+  width: 24%;
+  padding: 0.5px 0.5px;
+  margin-left: 0.5px;
+  margin-right: 0.5px;
+  background-color: white;
+  text-align: left;
+  float: left;
+}
+
+.border-right {
+    border-right: 1.5px solid black;
+}
+.borders {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    margin: -1px;
+}
+.border-left {
+    border-left: 1px solid #ddd;
+}
+
+div.cookbook_container {
+  /* margin-left:0px;
+  margin-right:0px;
+  padding: 0px 0px; */
+  background-color: white;
+  border: 1.5px solid black;
+  display: table;
+}
+
+div.cookbook_container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a.daily_digest {
+  color: red;
+}
+
+a.daily_digest:visited{
+  color: red;
+}
+
+a.content_menu {
+  color: black;
+}
+
+a.content_menu:visited {
+  color: black;
+}
+
+li {
+  margin-top: 10px;
+}
+
+li.rec {
+  color: white;
+}
+
+a.rec {
+  color: white;
+}
+
+a.content_menu:hover {
+  text-decoration: underline;
+
+}
+
+/* a.home:hover {
+  color: black;
+  background-color: black;
+  text-decoration: none;
+} */
+
+#carousel {
+    width: 100%;
+    height: 100%;
+    margin-left: -20px;
+    padding: 15px 25px;
+
+    overflow: visible;
+    white-space:nowrap;
+    overflow: auto;
+}
+
+#carousel .slide {
+    display: inline-block;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 10px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+figure img {
+  display: block;
+  width: 100%;
+}
+
+.portrait {
+    height: 80px;
+    width: 30px;
+}
+
+.landscape {
+    height: 30px;
+    width: 80px;
+}
+
+.square {
+    height: 75px;
+    width: 75px;
+}
+
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+/* Applies to all elements with <... class="someclass"> specified. */
+.someclass { color: red; }
+
+/* Applies to the element with <... id="someid"> specified. */
+#someid { color: green; }
+
+div.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+div.card {
+  display: inline-block;
+}

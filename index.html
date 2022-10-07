@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>• Y I W E I • L U O •</title>
+<meta name="keywords" content="tbd" />
+<meta property="og:description" content="plops of the everyday"/>
+
+<script src=src.js></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+<style>
+.fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+}
+
+.fullscreen-bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    height: 300%;
+    top: -100%;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: 300%;
+    left: -100%;
+  }
+}
+
+
+ul#menu li {
+  display:inline;
+}
+</style>
+
+<link rel="stylesheet" href="titles.css">
+
+</head>
+
+
+<body>
+
+<!--video from Maui > Big Island flight-->
+<div class="fullscreen-bg">
+        <video loop muted autoplay poster="cloud_vid.gif" class="fullscreen-bg__video" title="clouds and the Pacific near Hawai'i">
+            <source src="cloud_vid.webm" type="video/webm">
+            <source src="cloud_vid.gif" type="video/mp4">
+        </video>
+</div>
+
+<div id="outer">
+  <div id="container" style="padding-bottom:80px;color:white">
+      <a href="index.html" style="color:black">
+        <span style="letter-spacing:3px;font-size:200%;color:black">YIWEI LUO</span>
+      </a>
+      <ul id="menu" style="font-size:130%;color:black;padding-left:6px">
+        <li><a href="about.html" style="color:black"><i>about</i></a></li>
+        <li>|<li>
+        <li><a href="academic.html" style="color:black"><i>academic</i></a></li>
+        <li>|</li>
+        <li><a href="publications.html" style="color:black"><i>publications</i></a></li>
+        <li>|</li>
+        <li><a href="blog.html" style="color:black"><i>blog</i></a></li>
+        <li>|</li>
+        <li><a href="likes.html" style="color:black"><i>stuff I like</i></a></li>
+        <li>|</li>
+        <li><a href="CV.pdf" style="color:black"><i>CV</i></a></li>
+      </ul>
+    </div>
+</div>
+
+  <div id="projects" class="week_container" style="display:none;color:none">
+      <table style="width:50%">
+        <tr>
+          <th><button onclick="disp('lists')" class="week_menu">ongoing lists</button></th>
+          <th><button onclick="disp('collages')" class="week_menu">collages</button></th>
+        </tr>
+      </table>
+  </div>
+
+  <div id="lists" class="week_container" style="display:none">
+      <table style="width:50%">
+        <tr>
+          <th><button onclick="disp('blue')" class="week_menu">mentions of blue</button></th>
+          <th><button onclick="disp('books_in_transit')" class="week_menu">books in transit</button></th>
+        </tr>
+      </table>
+  </div>
+
+</body>
+</html>
