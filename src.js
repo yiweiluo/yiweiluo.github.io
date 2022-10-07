@@ -46,9 +46,6 @@ function disp(id) {
   }
 }
 
-var slideIndex = 1;
-showSlides(slideIndex);
-
 function hideElem() {
   document.getElementById("myDIV").style.visibility = "hidden";
 }
