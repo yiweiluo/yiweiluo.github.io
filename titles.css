@@ -16,10 +16,32 @@ table th:last-of-type {
   border: none;
 }
 
+div.scroll-container {
+  position: absolute;
+  top: 90px;
+  left: 157px;
+  /* right: 120px; */
+  border: 0px;
+  background-color: white;
+  background-size: 40px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  /* overflow: auto; */
+  direction: rtl;
+  /* width: 720px; */
+  /* height: 720px; */
+  padding: 0px;
+}
+
+div.scroll-container img {
+  padding: 0px;
+}
+
 
 div.column {
   float: left;
-  width: 50%;
+  width: 60%;
 }
 
 div.content_column {
@@ -131,6 +153,21 @@ div.recs_heading {
 div.food_comment {
   padding-bottom: 10px;
   padding-left: 30px;
+}
+
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 120px;
+}
+
+.image1 {
+  position: relative;
+  top: 0;
+  left: 0;
+  border: 0px;
+  right: 120px;
 }
 
 /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
